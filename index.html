@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Card Slider</title>
+    <link rel="stylesheet" type="text/css" href="Product Card.css" />
+  </head>
+  <body>
+    <div class="container">
+      <ul class="thumb">
+        <li onmouseover="changeImageSrc('/imagen/Nike1.png')">
+          <img src="/imagen/Nike1.png" />
+        </li>
+        <li onmouseover="changeImageSrc('/imagen/Nike2.png')">
+          <img src="/imagen/Nike2.png" />
+        </li>
+        <li onmouseover="changeImageSrc('/imagen/Nike3.png')">
+          <img src="/imagen/Nike3.png" />
+        </li>
+      </ul>
+      <div class="imgBox">
+        <h2>Nike Pegasus 40 By You</h2>
+        <img src="/imagen/Nike1.png" class="shoes" />
+        <ul class="size">
+          <span>Size</span>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+        </ul>
+        <a href="#" class="btn">Add To Cart</a>
+      </div>
+    </div>
+    <script>
+      function changeImageSrc(anything) {
+        document.querySelector(".shoes").src = anything;
+      }
+    </script>
+  </body>
+</html>
